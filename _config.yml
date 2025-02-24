@@ -31,12 +31,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: pages-themes/minimal@latest
+theme: jekyll-theme-minimal
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
-#plugins:
-#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
