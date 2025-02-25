@@ -20,7 +20,7 @@
 
 title: Nabangshu Sinha
 email: nabangshu.sinha[AT]gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: | # this means to ignore newlines until "baseurl:"
   Welcome to my personal website, where I showcase my work in data science, AI, finance, and cybersecurity.  
   Here, you'll find projects that highlight my technical skills, problem-solving abilities, and insights into  
   real-world applications of machine learning and data-driven decision-making.
