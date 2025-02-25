@@ -18,12 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Nabangshu's page
+title: Nabangshu Sinha
 email: nabangshu.sinha[AT]gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to my personal website, where I showcase my work in data science, AI, finance, and cybersecurity.
+Here, you'll find projects that highlight my technical skills, problem-solving abilities, and insights into
+real-world applications of machine learning and data-driven decision-making.
+
+Beyond data science, I enjoy playing badminton, researching history, and exploring emerging technologies.
+This site is a reflection of my curiosity, passion for learning, and commitment to continuous growth.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
