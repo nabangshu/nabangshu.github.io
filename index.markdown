@@ -4,9 +4,9 @@
 
 ---
 layout: default
-title: "Welcome to My Portfolio"
+title: "Nabangshu's site"
 ---
-# Welcome to My Website!!
+Welcome to My Website!!
 
 I will share the projects that I have worked on and also am currently working on.  
 Feel free to contact me at **nabangshu.sinha[AT]gmail.com**.
