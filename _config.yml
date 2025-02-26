@@ -28,9 +28,6 @@ description: | # this means to ignore newlines until "baseurl:"
   Beyond data science, I enjoy playing badminton, researching history, and exploring emerging technologies.  
   This site is a reflection of my curiosity, passion for learning, and commitment to continuous growth.<br><br>
 
-  Feel free to explore my projects and reach out if you'd like to collaborate!<br><br>
-  Contact me at nabangshu[DOT]sinha[AT]gmail[DOT]com
-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
