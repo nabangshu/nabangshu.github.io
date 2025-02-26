@@ -22,7 +22,7 @@ title: "Nabangshu's site"
 
 I built an interactive dashboard that analyzes stock market sentiment based on Reddit discussions. The tool dynamically visualizes sentiment trends over time, weighted by upvotes, allowing users to explore sentiment shifts for 10 NIFTY50 companies.
 
-🔗 **[Live Demo](https://stock-market-sentiment-nifty.streamlit.app/)**
+🔗 **[View Dashboard](https://stock-market-sentiment-nifty.streamlit.app/)**
 
 ---
 
