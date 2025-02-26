@@ -15,3 +15,12 @@ title: "Nabangshu's site"
 📊 **Data Science & AI:** Machine Learning, Deep Learning, Time Series Forecasting  
 🔧 **Tools & Libraries:** Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, OpenCV  
 🛠️ **Other Skills:** Cloud Computing, Data Engineering, Web Scraping  
+
+---
+
+## 📬 **Get in Touch**
+📧 **Email:** nabangshu[DOT]sinha[AT]gmail[DOT]com  
+💼 **LinkedIn:** (https://www.linkedin.com/in/nabangshu-sinha-56ab19a3/) 
+🐍 **GitHub:** [github.com/nabangshu](https://github.com/nabangshu)  
+
+Let's connect! I'm open to **collaborations, research, and new opportunities.** 🚀  
