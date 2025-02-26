@@ -24,13 +24,6 @@ I built an interactive dashboard that analyzes stock market sentiment based on R
 
 🔗 **[Live Demo](https://stock-market-sentiment-nifty.streamlit.app/)**
 
-<div style="text-align: center;">
-  <iframe src="https://stock-market-sentiment-nifty.streamlit.app/" 
-          width="100%" height="600" style="border: none;">
-  </iframe>
-</div>
-
-
 ---
 
 ## 📬 **Get in Touch**
