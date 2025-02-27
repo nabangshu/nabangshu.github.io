@@ -22,6 +22,20 @@ title: "Nabangshu's site"
 
 I built an interactive dashboard that analyzes stock market sentiment based on Reddit discussions. The tool dynamically visualizes sentiment trends over time, weighted by upvotes, allowing users to explore sentiment shifts for 10 NIFTY50 companies.
 
+The Stock Market Sentiment Heatmap visualizes public sentiment trends for NIFTY50 companies based on Reddit discussions. It tracks how investor sentiment fluctuates over time, considering both comment sentiment and upvotes to highlight the most influential opinions.
+
+📊 How to Interpret the Plot:
+The X-axis represents time, showing how sentiment evolves daily.
+The Y-axis represents sentiment proportion, indicating the fraction of positive or negative comments each day.
+Green circles indicate positive sentiment, while red circles represent negative sentiment.
+Circle size is based on total upvotes, making highly engaged discussions more prominent.
+Black or dark circles suggest low engagement or a mix of positive and negative comments.
+🚀 Potential Uses:
+✅ Track sentiment shifts for a company before major stock movements.
+✅ Identify high-engagement periods where sentiment might influence market trends.
+✅ Compare sentiment trends with stock price changes to find correlations.
+✅ Analyze how public perception reacts to financial reports, policies, or news events.
+
 🔗 **[View Dashboard](https://stock-market-sentiment-nifty.streamlit.app/)**
 
 ---
