@@ -24,17 +24,18 @@ I built an interactive dashboard that analyzes stock market sentiment based on R
 
 The Stock Market Sentiment Heatmap visualizes public sentiment trends for NIFTY50 companies based on Reddit discussions. It tracks how investor sentiment fluctuates over time, considering both comment sentiment and upvotes to highlight the most influential opinions.
 
-📊 How to Interpret the Plot:
-The X-axis represents time, showing how sentiment evolves daily.
-The Y-axis represents sentiment proportion, indicating the fraction of positive or negative comments each day.
-Green circles indicate positive sentiment, while red circles represent negative sentiment.
-Circle size is based on total upvotes, making highly engaged discussions more prominent.
-Black or dark circles suggest low engagement or a mix of positive and negative comments.
-🚀 Potential Uses:
-✅ Track sentiment shifts for a company before major stock movements.
-✅ Identify high-engagement periods where sentiment might influence market trends.
-✅ Compare sentiment trends with stock price changes to find correlations.
-✅ Analyze how public perception reacts to financial reports, policies, or news events.
+📊 How to Interpret the Plot:<br>
+* The X-axis represents time, showing how sentiment evolves daily.<br>
+* The Y-axis represents sentiment proportion, indicating the fraction of positive or negative comments each day.<br>
+* Green circles indicate positive sentiment, while red circles represent negative sentiment.<br>
+* Circle size is based on total upvotes, making highly engaged discussions more prominent.<br>
+* Black or dark circles suggest low engagement or a mix of positive and negative comments.<br><be>
+
+🚀 Potential Uses:<br>
+✅ Track sentiment shifts for a company before major stock movements.<br>
+✅ Identify high-engagement periods where sentiment might influence market trends.<br>
+✅ Compare sentiment trends with stock price changes to find correlations.<br>
+✅ Analyze how public perception reacts to financial reports, policies, or news events.<br>
 
 🔗 **[View Dashboard](https://stock-market-sentiment-nifty.streamlit.app/)**
 
