@@ -5,6 +5,8 @@ category: energy
 region: Guwahati, Assam
 tags: [power cuts, reliability, data]
 charts: true
+description: "11 voltage monitors, 6,900 days, 5,000 power cuts. Guwahati loses about 30 minutes of power a day, peaking at 7 am and in September."
+image: /assets/img/posts/guwahati-outages-card.png
 ---
 
 Ask anyone in Guwahati about power cuts and you will get an opinion. I wanted numbers.
