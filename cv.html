@@ -1,0 +1,40 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+<h1>Curriculum Vitae</h1>
+{% assign cv = site.static_files | where: "path", "/assets/files/cv.pdf" | first %}
+{% if cv %}
+<p><a href="{{ '/assets/files/cv.pdf' | relative_url }}">Download CV (PDF)</a></p>
+{% else %}
+<p>A PDF version is available on request.</p>
+{% endif %}
+
+<h2>Education</h2>
+<ul class="timeline">
+  <li><span class="when">2022 – 2025</span><span class="what">Ph.D., Computer Science and Mathematics, University of Camerino, Italy<small>Thesis: Forecasting Demand and Supply Curves in Day-Ahead Electricity Markets</small></span></li>
+  <li><span class="when">2015 – 2017</span><span class="what">M.Sc., Electrical Engineering (Optoelectronics), National Chung Hsing University, Taiwan<small>Thesis: Simulation of IV and QE characteristics of a-Si:H p-i-n solar cells</small></span></li>
+  <li><span class="when">2011 – 2015</span><span class="what">B.Tech., Electronics and Communication Engineering, National Institute of Technology Silchar, India</span></li>
+</ul>
+
+<h2>Experience</h2>
+<ul class="timeline">
+  <li><span class="when">2025 – now</span><span class="what">Postdoctoral Researcher, Hokkaido University, Japan<small>Faculty of Advanced Life Science. Machine learning for single-cell RNA sequencing data: representation learning, perturbation response, deconvolution and cell dynamics.</small></span></li>
+  <li><span class="when">Feb 2022 – Feb 2025</span><span class="what">Ph.D. Researcher, University of Camerino, Italy<small>Built a curve-forecasting framework based on a monotonic autoencoder for electricity market bid curves; assembled large-scale datasets from public market data.</small></span></li>
+  <li><span class="when">Oct 2023 – Mar 2024</span><span class="what">Visiting Researcher, University of Duisburg-Essen, Germany<small>Forecasting models for German electricity market curve data.</small></span></li>
+  <li><span class="when">Oct 2020 – Apr 2021</span><span class="what">Research Assistant, National Yang Ming Chiao Tung University, Taiwan<small>Bayesian structural time series (BSTS) for causal inference in management research (R).</small></span></li>
+</ul>
+
+<h2>Service and honours</h2>
+<ul class="plain">
+  <li>Session Chair, International Symposium on Forecasting (ISF), 2024</li>
+  <li>Best Paper Award, Honorable Mention, Strategic Management Society Conference, 2021</li>
+</ul>
+
+<h2>Skills</h2>
+<p class="body-text"><strong>Languages:</strong> Python, R, MATLAB, C/C++, SQL, Bash<br>
+<strong>ML:</strong> PyTorch, Scanpy, TensorFlow/Keras, scikit-learn, XGBoost, LightGBM, statsmodels<br>
+<strong>Tools:</strong> Git, Docker, Linux, LaTeX, Jupyter</p>
+
+<p>See <a href="{{ '/publications/' | relative_url }}">Publications</a> for the full list.</p>

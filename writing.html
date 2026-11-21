@@ -1,0 +1,74 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+---
+<p class="eyebrow">Weekly notes</p>
+<h1>Writing</h1>
+<p class="lede">
+  Notes on energy, weather, single-cell biology and space, mostly about finding signal in
+  noisy data, with a focus on North-East India.
+</p>
+
+<div class="filters" role="tablist" aria-label="Filter by topic">
+  <button class="chip active" data-cat="all" role="tab" aria-selected="true">All</button>
+  {% for c in site.data.categories %}
+  <button class="chip" data-cat="{{ c.id }}" role="tab" aria-selected="false"><span class="dot cat-{{ c.id }}"></span>{{ c.label }}</button>
+  {% endfor %}
+</div>
+
+{% for c in site.data.categories %}
+<p class="cat-blurb" data-cat="{{ c.id }}" hidden>{{ c.blurb }}</p>
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+<p class="empty">The first post is coming soon.</p>
+{% endif %}
+<p class="empty" id="none-in-cat" hidden>No posts in this topic yet.</p>
+
+<ul class="postlist">
+  {% for post in site.posts %}
+  {% assign cat = site.data.categories | where: "id", post.category | first %}
+  <li data-cat="{{ post.category }}">
+    <span class="date">{{ post.date | date: "%-d %B %Y" }}{% if cat %} · <span class="cat-label cat-{{ cat.id }}">{{ cat.label }}</span>{% endif %}</span>
+    <a class="t" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="callout">
+  <p><strong>Free to read.</strong> Subscribe with <a href="{{ '/writing/feed.xml' | relative_url }}">RSS</a> to get new posts.</p>
+  <p>Utilities, agencies or labs who need a custom forecast or analysis can contact me by email.</p>
+</div>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  var items = document.querySelectorAll('.postlist li');
+  var blurbs = document.querySelectorAll('.cat-blurb');
+  var none = document.getElementById('none-in-cat');
+  function show(cat) {
+    var n = 0;
+    chips.forEach(function (c) {
+      var on = c.dataset.cat === cat;
+      c.classList.toggle('active', on);
+      c.setAttribute('aria-selected', on);
+    });
+    items.forEach(function (li) {
+      var on = cat === 'all' || li.dataset.cat === cat;
+      li.hidden = !on; if (on) n++;
+    });
+    blurbs.forEach(function (b) { b.hidden = b.dataset.cat !== cat; });
+    none.hidden = items.length === 0 || n > 0;
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      show(c.dataset.cat);
+      history.replaceState(null, '', c.dataset.cat === 'all' ? location.pathname : '#' + c.dataset.cat);
+    });
+  });
+  var h = location.hash.slice(1);
+  if (h && document.querySelector('.chip[data-cat="' + h + '"]')) show(h);
+})();
+</script>

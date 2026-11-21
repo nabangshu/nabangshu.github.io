@@ -1,0 +1,8 @@
+<ul class="links">
+  {% if site.social.email != "" %}{% assign em = site.social.email | split: "@" %}<li><a class="js-email" href="#" data-u="{{ em[0] }}" data-d="{{ em[1] }}">Email</a></li>{% endif %}
+  {% if site.social.scholar != "" %}<li><a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a></li>{% endif %}
+  {% if site.social.orcid != "" %}<li><a href="https://orcid.org/{{ site.social.orcid }}">ORCID</a></li>{% endif %}
+  {% if site.social.github != "" %}<li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>{% endif %}
+  {% if site.social.linkedin != "" %}<li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>{% endif %}
+</ul>
+<script>document.querySelectorAll('.js-email').forEach(function(a){a.href='mailto:'+a.dataset.u+'@'+a.dataset.d;});</script>

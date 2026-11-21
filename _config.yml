@@ -1,0 +1,40 @@
+title: Nabangshu Sinha
+description: >-
+  Researcher in time-series forecasting, electricity markets and machine learning.
+  Weekly writing on energy, weather, single-cell biology and space, focused on North-East India.
+author: Nabangshu Sinha
+url: "https://nabangshu.github.io"
+baseurl: ""
+lang: en
+
+# Links shown on the site (fill in / delete as needed)
+social:
+  email: "nabangshu.sinha@gmail.com"   # shown via a small script to reduce spam
+  github: "nabangshu"
+  scholar: ""          # Google Scholar user id, e.g. AbCdEfGhIjK
+  orcid: ""            # e.g. 0000-0000-0000-0000
+  linkedin: "nabangshu-sinha-56ab19a3"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+permalink: /writing/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: /writing/feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

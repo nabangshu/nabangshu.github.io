@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if page.math %}
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav>
+        {% assign p = page.url %}
+        <a href="{{ '/' | relative_url }}" {% if p == '/' %}class="active"{% endif %}>About</a>
+        <a href="{{ '/publications/' | relative_url }}" {% if p contains '/publications' %}class="active"{% endif %}>Publications</a>
+        <a href="{{ '/cv/' | relative_url }}" {% if p contains '/cv' %}class="active"{% endif %}>CV</a>
+        <a href="{{ '/writing/' | relative_url }}" {% if p contains '/writing' %}class="active"{% endif %}>Writing</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      {% include links.html %}
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author }} · <a href="{{ '/writing/feed.xml' | relative_url }}">RSS</a></p>
+    </div>
+  </footer>
+</body>
+</html>

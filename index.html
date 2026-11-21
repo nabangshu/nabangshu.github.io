@@ -1,0 +1,117 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <img src="{{ '/assets/img/profile.svg' | relative_url }}" alt="Nabangshu Sinha">
+  <div>
+    <h1>Nabangshu Sinha</h1>
+    <p class="role">Postdoctoral Researcher · Faculty of Advanced Life Science, Hokkaido University</p>
+  </div>
+</section>
+
+<p class="lede">
+  I build machine-learning models for high-dimensional data that change over time, and I apply
+  them to two very different systems: electricity markets and living cells.
+</p>
+<p class="body-text">
+  My PhD (Computer Science and Mathematics, University of Camerino, 2025) developed methods for
+  forecasting whole demand and supply curves in day-ahead electricity markets, including a
+  monotonic autoencoder published in <em>Applied Energy</em>. At Hokkaido I apply the same toolkit
+  to single-cell RNA sequencing data. I grew up in Assam and studied at NIT Silchar. Every week I
+  <a href="{{ '/writing/' | relative_url }}">write</a> about energy, weather, single-cell biology and
+  space, with a focus on North-East India.
+</p>
+{% include links.html %}
+
+<h2>Research</h2>
+<div class="areas">
+  <div class="area energy">
+    <span class="kicker">Energy systems</span>
+    <p>Forecasting prices, demand and full market bid curves in electricity markets.</p>
+    <ul>
+      <li>Demand and supply curve forecasting</li>
+      <li>Echo state networks and reservoir computing</li>
+      <li>Renewable scenario generation</li>
+      <li>Portfolio and emissions under uncertainty</li>
+    </ul>
+  </div>
+  <div class="area bio">
+    <span class="kicker">Single-cell biology</span>
+    <p>Machine learning on single-cell RNA sequencing (scRNA-seq) data.</p>
+    <ul>
+      <li>Representation learning for cell states</li>
+      <li>Predicting responses to perturbations</li>
+      <li>Cell-type deconvolution</li>
+      <li>Modelling how cells change over time</li>
+    </ul>
+  </div>
+</div>
+<p class="thread">
+  <strong>The common thread:</strong> both are noisy, high-dimensional systems with structure the model has
+  to respect, such as monotone bid curves or cells that follow developmental paths. The same
+  methods carry across: autoencoders, generative models and models of dynamics.
+</p>
+
+<h2>Experience and education</h2>
+<ul class="timeline">
+  <li><span class="when">2025 – now</span><span class="what">Postdoctoral Researcher, Hokkaido University<small>Faculty of Advanced Life Science · ML for single-cell transcriptomics</small></span></li>
+  <li><span class="when">2023 – 2024</span><span class="what">Visiting Researcher, University of Duisburg-Essen<small>Forecasting German electricity market curves</small></span></li>
+  <li><span class="when">2022 – 2025</span><span class="what">Ph.D., Computer Science and Mathematics, University of Camerino<small>Forecasting Demand and Supply Curves in Day-Ahead Electricity Markets</small></span></li>
+  <li><span class="when">2020 – 2021</span><span class="what">Research Assistant, National Yang Ming Chiao Tung University<small>Bayesian structural time series for causal inference</small></span></li>
+  <li><span class="when">2015 – 2017</span><span class="what">M.Sc., Electrical Engineering, National Chung Hsing University</span></li>
+  <li><span class="when">2011 – 2015</span><span class="what">B.Tech., Electronics and Communication Engineering, NIT Silchar</span></li>
+</ul>
+
+<h2>Selected publications</h2>
+<ul class="pubs">
+  <li>
+    <span class="ptitle">Demand and supply curve forecasting using a monotonic autoencoder for short-term day-ahead electricity market bid curves</span>
+    <span class="me">N. Sinha</span>, C. Lucheroni · <span class="venue">Applied Energy</span> 397, 2025
+  </li>
+  <li>
+    <span class="ptitle">BME Model: Forecasting electricity supply and demand curves using disentangled prices and volumes</span>
+    <span class="me">N. Sinha</span>, C. Lucheroni, C. Mari · <span class="venue">Applied Stochastic Models in Business and Industry</span> 41(4), 2025 · <a href="https://github.com/nabangshu/BME_Model">Code</a>
+  </li>
+</ul>
+<a class="more" href="{{ '/publications/' | relative_url }}">All publications →</a>
+
+<h2>Projects</h2>
+<ul class="pubs">
+  <li>
+    <span class="ptitle">Stock market sentiment for NIFTY50 companies</span>
+    Tracks daily investor sentiment from Reddit discussions of 10 NIFTY50 companies, weighted by
+    upvotes, to compare shifts in public mood with market events. Python, NLP, Streamlit ·
+    <a href="https://github.com/nabangshu/stock-market-sentiment">Code</a>
+  </li>
+  <li>
+    <span class="ptitle">BME model: forecasting electricity market curves</span>
+    Open code and data for forecasting supply and demand bid curves in the Italian IPEX Nord
+    zone, runnable in Google Colab ·
+    <a href="https://github.com/nabangshu/BME_Model">Code</a>
+  </li>
+</ul>
+
+{% if site.posts.size > 0 %}
+<h2>Latest writing</h2>
+<ul class="postlist">
+  {% for post in site.posts limit:3 %}
+  <li>
+    <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <a class="t" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<h2>Service and honours</h2>
+<ul class="plain">
+  <li>Session Chair, International Symposium on Forecasting (ISF), 2024</li>
+  <li>Best Paper Award, Honorable Mention, Strategic Management Society Conference, 2021</li>
+</ul>
+
+<h2>Collaboration</h2>
+<p class="body-text">
+  I welcome research collaborations and applied forecasting projects with utilities,
+  generators, agencies and labs, especially in North-East India. Please get in touch by email.
+</p>

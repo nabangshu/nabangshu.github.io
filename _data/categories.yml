@@ -1,0 +1,13 @@
+# Post categories. In a post's front matter use:  category: energy
+- id: energy
+  label: Energy
+  blurb: Electricity demand, prices and generation in North-East India, with forecasts I score afterwards.
+- id: weather
+  label: Weather & climate
+  blurb: Rain, heat, floods and local weather in the North-East, eventually with data from my own rooftop station.
+- id: single-cell
+  label: Single-cell
+  blurb: Machine learning on single-cell RNA sequencing data, using public datasets and published methods.
+- id: space
+  label: Space & SETI
+  blurb: Space science and the search for technosignatures, mostly about finding faint signals in noisy data.

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post">
+  {% assign cat = site.data.categories | where: "id", page.category | first %}
+  <p class="eyebrow"><a href="{{ '/writing/' | relative_url }}{% if cat %}#{{ cat.id }}{% endif %}" class="cat-{{ page.category }}">{% if cat %}{{ cat.label }}{% else %}Writing{% endif %}</a>{% if page.region %} · {{ page.region }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date: "%-d %B %Y" }}{% if page.tags.size > 0 %} · {{ page.tags | join: ", " }}{% endif %}</p>
+  <div class="prose">
+    {{ content }}
+  </div>
+  {% if page.category == "energy" or page.category == "weather" %}
+  <aside class="disclaimer">
+    Forecasts on this site are research outputs shared for information only. They are not
+    investment, trading or operational advice.
+  </aside>
+  {% endif %}
+  <p><a href="{{ '/writing/' | relative_url }}">&larr; All writing</a> · <a href="{{ '/writing/feed.xml' | relative_url }}">Subscribe (RSS)</a></p>
+</article>
