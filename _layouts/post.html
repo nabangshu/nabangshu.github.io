@@ -17,3 +17,4 @@ layout: default
   {% endif %}
   <p><a href="{{ '/writing/' | relative_url }}">&larr; All writing</a> · <a href="{{ '/writing/feed.xml' | relative_url }}">Subscribe (RSS)</a></p>
 </article>
+{% if page.charts %}<script defer src="{{ '/assets/js/charts.js' | relative_url }}"></script>{% endif %}
